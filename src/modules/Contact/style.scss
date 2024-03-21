@@ -1,0 +1,179 @@
+.contact-box {
+  border-radius: 12px;
+  background: radial-gradient(
+    333.17% 80.94% at 51.32% 69.21%,
+    #3da0fc 0%,
+    rgba(2, 227, 214, 0.2) 100%
+  );
+  padding: 32px;
+  position: relative;
+  display: flex;
+}
+
+.form {
+  max-width: 456px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.form-title {
+  color: #242825;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.inp {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #f2f2f2;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #242825;
+  outline: none;
+  padding: 12px 20px;
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+
+.inp::placeholder {
+  font-weight: 400;
+}
+
+.inp-box {
+  width: 100%;
+  display: inline-flex;
+  margin-bottom: 48px;
+}
+
+.inp-plus {
+  padding: 12px 20px;
+  color: gray;
+  border-radius: 8px 0 0 8px;
+  font-size: 16px;
+  background: #f2f2f2;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.inp-spn {
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 20px;
+  border-radius: 1px;
+  background: rgb(217, 217, 217);
+}
+
+.inp-num {
+  width: 100%;
+  border-radius: 0 8px 8px 0;
+  padding: 0 5px;
+  background: #f2f2f2;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #242825;
+  outline: none;
+  border: none;
+}
+
+.inp-num::placeholder {
+  font-weight: 400;
+}
+
+.from-btn {
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px 0;
+  border: none;
+  outline: none;
+  background: #242825;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.contact-img {
+  position: absolute;
+  top: -14px;
+  left: calc(50% + 200px);
+}
+
+@media screen and (max-width: 1165px) {
+  .contact-img {
+    left: calc(50%);
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .contact-img {
+    display: none;
+  }
+
+  .contact-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .form-title {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .inp-plus {
+    padding: 10px 20px;
+    color: gray;
+    border-radius: 8px 0 0 8px;
+    font-size: 14px;
+    background: #f2f2f2;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .inp-spn {
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 20px;
+    border-radius: 1px;
+    background: rgb(217, 217, 217);
+  }
+
+  .inp-num {
+    padding: 0 5px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #242825;
+    outline: none;
+    border: none;
+  }
+
+  .inp {
+    font-size: 13px;
+    padding: 10px 20px;
+    margin-top: 30x;
+    margin-bottom: 16px;
+  }
+
+  .inp::placeholder {
+    font-weight: 400;
+  }
+}
