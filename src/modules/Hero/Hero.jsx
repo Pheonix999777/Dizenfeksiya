@@ -1,23 +1,21 @@
 import { Container } from "../../components/Container/Container";
 import heroImg from "../../assets/img/WnYJyJjWq3U 1.png";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 
 export const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section className="hero">
       <a className="anchor" id="home"></a>
       <Container>
         <div className="hero-div">
-          <div className="hero-wrapper">
-            <h1 className="title">Dizenfeksiya xizmati </h1>
-            <p className="hero-text">
-              Биз Тошкентда 10 йилдан бери профессионал дезинфексия ишларини
-              олиб борамиз, шунинг учун биринчи марта зараркунандалардан қандай
-              қутулишни биламиз.
-            </p>
+          <div data-aos="fade-right" className="hero-wrapper">
+            <h1 className="title"> {t("dez")} </h1>
+            <p className="hero-text">{t("p")}</p>
 
             <a className="btn-div" href="#footer">
-              <button className="btn">Bog’lanish</button>
+              <button className="btn">{t("contact")}</button>
             </a>
           </div>
           <div className="right-img">

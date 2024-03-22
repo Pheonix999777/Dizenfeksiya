@@ -1,8 +1,9 @@
 import { Container } from "../Container/Container";
-import { Select } from "../Select/Select";
 import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 import "./style.scss";
 
 export const Header = () => {
@@ -24,12 +25,19 @@ export const Header = () => {
     setShowNavbar(!showNavbar);
   };
 
+  const handleLanguageChange = (e) => {
+    const selectedLanguage = e.target.value;
+    i18next.changeLanguage(selectedLanguage);
+  };
+
+  const { t } = useTranslation();
+
   return (
     <header className={`header ${isSticky ? "sticky" : ""}`}>
       <Container>
         <div className="header-div">
           <a className="logo" href="#">
-            Dizenfeksiya
+            Dezinfeksiya
           </a>
           <div className="header-right">
             <nav className={`navbar  ${showNavbar && "active"}`}>
@@ -43,7 +51,7 @@ export const Header = () => {
                     href="#home"
                     onClick={handleShowNavbar}
                   >
-                    Asosiy
+                    {t("home")}
                   </a>
                 </li>
                 <li className="ul-li">
@@ -52,7 +60,7 @@ export const Header = () => {
                     href="#about"
                     onClick={handleShowNavbar}
                   >
-                    Biz xaqimizda
+                    {t("about")}
                   </a>
                 </li>
                 <li className="ul-li">
@@ -61,7 +69,7 @@ export const Header = () => {
                     href="#service"
                     onClick={handleShowNavbar}
                   >
-                    Xizmatlar
+                    {t("service")}
                   </a>
                 </li>
                 <li className="ul-li">
@@ -70,7 +78,7 @@ export const Header = () => {
                     href="#faq"
                     onClick={handleShowNavbar}
                   >
-                    Faq
+                    {t("faq")}
                   </a>
                 </li>
               </ul>
@@ -80,13 +88,21 @@ export const Header = () => {
                 onClick={handleShowNavbar}
               >
                 {" "}
-                <button className="nav-btn">Bog’lanish</button>
+                <button className="nav-btn">{t("contact")}</button>
               </a>
             </nav>
-            <Select />
+            <select
+              className="select"
+              name=""
+              id=""
+              onChange={handleLanguageChange}
+            >
+              <option value={"uz"}>Uzbek</option>
+              <option value={"ru"}>Russian</option>
+            </select>
             <a href="#footer">
               {" "}
-              <button className="btn">Bog’lanish</button>
+              <button className="btn">{t("contact")}</button>
             </a>
           </div>
           <div
