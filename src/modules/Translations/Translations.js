@@ -71,6 +71,7 @@ i18next
           name: "Ismingiz",
           yub: "Yuborish",
           location: "Uzbekiston, Toshkent shahri",
+          send: "Xabaringiz jo'natildi",
         },
       },
       ru: {
@@ -133,6 +134,7 @@ i18next
           name: "Ваше имя",
           yub: "Отправка",
           location: "Узбекистан, город Ташкент",
+          send: "Ваше сообщение было отправлено",
         },
       },
     },

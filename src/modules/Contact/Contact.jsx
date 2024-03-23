@@ -64,7 +64,7 @@ export const Contact = () => {
               <ModalBody>
                 <Box className="chakra-box">
                   <FaRegCheckCircle className="contact-svg" />
-                  <Box className="chakra-div">Your message has been sent</Box>
+                  <Box className="chakra-div">{t("send")}</Box>
                 </Box>
               </ModalBody>
             </ModalContent>
