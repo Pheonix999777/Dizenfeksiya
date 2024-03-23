@@ -130,7 +130,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 32px;
+  padding: 20px;
 }
 
 .service-content-div {
@@ -334,7 +334,7 @@
     );
     display: block;
     gap: 0;
-    padding: 32px;
+    padding: 20px;
   }
 
   .service-content-div {
@@ -376,7 +376,8 @@
   }
 
   .service-box-title {
-    font-size: 32px;
+    font-size: 28px;
+    line-height: 48px;
   }
 }
 
@@ -390,7 +391,7 @@
   }
 
   .service-content-text {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .service-img {

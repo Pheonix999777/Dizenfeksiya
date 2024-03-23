@@ -12,9 +12,11 @@ import {
   ModalOverlay,
   useDisclosure,
 } from "@chakra-ui/react";
+import { useState } from "react";
 
 export const Contact = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [name, setMasage] = useState(null);
   const { t } = useTranslation();
 
   const token = "7183149447:AAGVUY8rHtWLmvWrUmn_KRpNZ8oyxcX8LiI";
@@ -52,6 +54,9 @@ export const Contact = () => {
     const name = e.target.elements.name.value;
     const number = e.target.elements.number.value;
     sendMessage(name, number);
+    setMasage(null);
+    e.target.elements.name.value = "";
+    e.target.elements.number.value = "";
   };
 
   return (
@@ -78,6 +83,8 @@ export const Contact = () => {
               name="name"
               placeholder={t("name")}
               required
+              value={name}
+              onChange={(e) => setMasage(e.target.value)}
             />
 
             <div className="inp-box">
