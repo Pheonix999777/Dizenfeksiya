@@ -25,11 +25,13 @@ export const Faq = () => {
             <li className="faq-list" onClick={() => updateToggle(0)}>
               <div className="faq-btn">
                 <h4 className="faq-list-title"> {t("faqtext")}</h4>
-                {openItems[0] ? (
-                  <GoChevronUp className="faq-icon-up" />
-                ) : (
-                  <GoChevronDown className="faq-icon" />
-                )}
+                <span className="faq-icon-box">
+                  {openItems[0] ? (
+                    <GoChevronUp className="faq-icon-up" />
+                  ) : (
+                    <GoChevronDown className="faq-icon" />
+                  )}
+                </span>
               </div>
               <div className={openItems[0] ? "faq-open" : "faq-close"}>
                 <p className="faq-text"> {t("wrapper")}</p>
@@ -39,25 +41,30 @@ export const Faq = () => {
             <li className="faq-list" onClick={() => updateToggle(1)}>
               <div className="faq-btn">
                 <h4 className="faq-list-title"> {t("faqtext2")}</h4>
-                {openItems[1] ? (
-                  <GoChevronUp className="faq-icon-up" />
-                ) : (
-                  <GoChevronDown className="faq-icon" />
-                )}
+                <span className="faq-icon-box">
+                  {" "}
+                  {openItems[1] ? (
+                    <GoChevronUp className="faq-icon-up" />
+                  ) : (
+                    <GoChevronDown className="faq-icon" />
+                  )}
+                </span>
               </div>
               <div className={openItems[1] ? "faq-open" : "faq-close"}>
-                <p className="faqtext2"> {t("wrapper2")}</p>
+                <p className="faq-text"> {t("wrapper2")}</p>
               </div>
             </li>
 
             <li className="faq-list" onClick={() => updateToggle(2)}>
               <div className="faq-btn">
                 <h4 className="faq-list-title"> {t("faqtext3")}</h4>
-                {openItems[2] ? (
-                  <GoChevronUp className="faq-icon-up" />
-                ) : (
-                  <GoChevronDown className="faq-icon" />
-                )}
+                <span className="faq-icon-box">
+                  {openItems[2] ? (
+                    <GoChevronUp className="faq-icon-up" />
+                  ) : (
+                    <GoChevronDown className="faq-icon" />
+                  )}
+                </span>
               </div>
               <div className={openItems[2] ? "faq-open" : "faq-close"}>
                 <p className="faq-text"> {t("wrapper3")}</p>

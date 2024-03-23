@@ -1,6 +1,12 @@
 import { Container } from "../../components/Container/Container";
 import cardImg from "../../assets/img/dezinyeksiya-bea8e70f.png";
+import cardImg2 from "../../assets/img/derazatsiya-83b522bf.png";
+import cardImg3 from "../../assets/img/dizinfeksiya-52660f2d.png";
 import cardImage from "../../assets/img/klopi-6c1f42ef.jpg";
+import cardImage2 from "../../assets/img/tarakan-d8b430bd.jpg";
+import cardImage3 from "../../assets/img/skarpion-6902a7a9.jpg";
+import cardImage4 from "../../assets/img/grizuni-de8c9315.jpg";
+import cardImage5 from "../../assets/img/bloxi-7e06d020.jpg";
 import cardpht from "../../assets/img/obrazovaniye_s 2.png";
 import { AiFillCheckCircle } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
@@ -18,7 +24,13 @@ export const Service = () => {
         </div>
         <div className="service-div">
           <div className="service-card">
-            <img src={cardImg} alt="" width={300} height={300} />
+            <img
+              className="service-card-img"
+              src={cardImg3}
+              alt=""
+              width={300}
+              height={300}
+            />
             <div className="service-wrapper">
               <h3 className="service-wrapper-title">{t("title")}</h3>
               <p className="service-wrapper-text">{t("word")}</p>
@@ -26,7 +38,13 @@ export const Service = () => {
           </div>
 
           <div className="service-card">
-            <img src={cardImg} alt="" width={300} height={300} />
+            <img
+              className="service-card-img"
+              src={cardImg}
+              alt=""
+              width={300}
+              height={300}
+            />
             <div className="service-wrapper">
               <h3 className="service-wrapper-title">{t("title2")}</h3>
               <p className="service-wrapper-text">{t("word2")}</p>
@@ -34,7 +52,13 @@ export const Service = () => {
           </div>
 
           <div className="service-card">
-            <img src={cardImg} alt="" width={300} height={300} />
+            <img
+              className="service-card-img"
+              src={cardImg2}
+              alt=""
+              width={300}
+              height={300}
+            />
             <div className="service-wrapper">
               <h3 className="service-wrapper-title">{t("title3")}</h3>
               <p className="service-wrapper-text">{t("word3")}</p>
@@ -71,7 +95,7 @@ export const Service = () => {
                 </a>
                 <img
                   className="service-img"
-                  src={cardImage}
+                  src={cardImage2}
                   alt=""
                   width={120}
                   height={120}
@@ -88,7 +112,7 @@ export const Service = () => {
                 </a>
                 <img
                   className="service-img"
-                  src={cardImage}
+                  src={cardImage3}
                   alt=""
                   width={120}
                   height={120}
@@ -105,7 +129,7 @@ export const Service = () => {
                 </a>
                 <img
                   className="service-img"
-                  src={cardImage}
+                  src={cardImage4}
                   alt=""
                   width={120}
                   height={120}
@@ -122,7 +146,7 @@ export const Service = () => {
                 </a>
                 <img
                   className="service-img"
-                  src={cardImage}
+                  src={cardImage5}
                   alt=""
                   width={120}
                   height={120}

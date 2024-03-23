@@ -182,9 +182,9 @@
     padding: 20px 10px;
     border: 2.3px solid #020c315d;
     border-radius: 20px;
-    display: block;
-    text-align: center;
-    justify-content: space-around;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 30px;
   }
 
@@ -229,6 +229,20 @@
 
   .service-box-title {
     font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .service-card-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .service-card-img {
+    width: 180px;
+    height: 180px;
   }
 }
 
@@ -358,7 +372,7 @@
 
 @media screen and (max-width: 460px) {
   .service-content-text {
-    font-size: 27px;
+    font-size: 24px;
   }
 
   .service-box-title {
@@ -375,6 +389,10 @@
     margin-top: 50px;
   }
 
+  .service-content-text {
+    font-size: 20px;
+  }
+
   .service-img {
     margin-left: 0;
   }
@@ -382,5 +400,15 @@
   .service-ul .btn {
     padding: 10px 25px;
     margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .service-card-title {
+    font-size: 22px;
+  }
+
+  .service-card-text {
+    font-size: 13px;
   }
 }

@@ -1,3 +1,4 @@
+import { ChakraProvider } from "@chakra-ui/react";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { About } from "./modules/About/About";
@@ -10,13 +11,15 @@ import "./modules/Translations/Translations";
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <About />
-      <Service />
-      <Faq />
-      <Contact />
-      <Footer />
+      <ChakraProvider>
+        <Header />
+        <Hero />
+        <About />
+        <Service />
+        <Faq />
+        <Contact />
+        <Footer />
+      </ChakraProvider>
     </>
   );
 }

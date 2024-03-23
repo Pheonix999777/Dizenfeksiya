@@ -1,6 +1,7 @@
 import { Container } from "../../components/Container/Container";
 import { BsLightningCharge } from "react-icons/bs";
 import { PiMedal } from "react-icons/pi";
+import { MdOutlineHandshake } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 import "./style.scss";
 
@@ -25,7 +26,7 @@ export const About = () => {
           </li>
 
           <li className="about-cards">
-            <BsLightningCharge className="ul-icons" />
+            <MdOutlineHandshake className="ul-icons" />
             <h3 className="about-cards-title">{t("maq")}</h3>
             <p className="about-cards-text">{t("text3")}</p>
           </li>

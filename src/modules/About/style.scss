@@ -12,7 +12,6 @@
 .about-ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   @include reset-list;
   padding: 32px 0;
   border-top: 1px solid #ccc;
@@ -95,14 +94,36 @@
   margin-bottom: 60px;
 }
 
-@media screen and (max-width: 990px) {
-  .about-title {
-    color: #020c31;
-    font-size: 40px;
-    font-weight: 700;
-    padding-bottom: 32px;
+@media screen and (max-width: 848px) {
+  .about-ul {
+    display: flex;
+    flex-wrap: wrap;
+    @include reset-list;
+    padding: 32px 0;
+    border-top: 1px solid #ccc;
+    margin-left: -20px;
   }
 
+  .about-cards {
+    width: calc(100% / 2 - 20px);
+    margin-left: 20px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-wrapper-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-wrapper-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 620px) {
   .about-ul {
     display: flex;
     flex-wrap: wrap;
@@ -124,17 +145,13 @@
     margin-left: 0;
     margin-bottom: 20px;
   }
-}
 
-@media screen and (max-width: 700px) {
-  .about-wrapper-title {
-    font-size: 30px;
+  .about-cards-title {
+    max-width: 100%;
   }
-}
 
-@media screen and (max-width: 700px) {
-  .about-wrapper-title {
-    font-size: 30px;
+  .about-cards-text {
+    max-width: 100%;
   }
 }
 
