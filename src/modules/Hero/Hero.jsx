@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Container } from "../../components/Container/Container";
-import heroImg from "../../assets/img/WnYJyJjWq3U 1.png";
+import heroImg from "../../assets/img/WnYJyJjWq3U 1 (1).png";
 import "./style.scss";
 
 export const Hero = () => {
