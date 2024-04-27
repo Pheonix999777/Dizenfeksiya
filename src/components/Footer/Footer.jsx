@@ -1,6 +1,7 @@
 import { Container } from "../Container/Container";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
+import Logo from "../../assets/img/Dezinfeksiya-photo.png";
 import { useTranslation } from "react-i18next";
 import "./style.scss";
 
@@ -12,7 +13,7 @@ export const Footer = () => {
       <Container>
         <div className="footer-box">
           <a className="logo" href="#">
-            Dezinfeksiya
+            <img className="header-logo" src={Logo} alt="" />
           </a>
           <div className="footer-wrapper">
             <div className="footer-right">
