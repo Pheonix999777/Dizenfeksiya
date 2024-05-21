@@ -2,6 +2,7 @@ import { Container } from "../Container/Container";
 import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import { useEffect, useState } from "react";
+import Logo from "../../assets/img/Dezinfeksiya-photo.png";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import "./style.scss";
@@ -37,7 +38,7 @@ export const Header = () => {
       <Container>
         <div className="header-div">
           <a className="logo" href="#">
-            Dezinfeksiya
+            <img className="header-logo" src={Logo} alt="" />
           </a>
           <div className="header-right">
             <nav className={`navbar  ${showNavbar && "active"}`}>
